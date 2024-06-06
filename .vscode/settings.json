@@ -5,8 +5,13 @@
     "gitdoc.autoPushDelay": 0,
     "gitdoc.commitMessageFormat": "ccc, LLL d, y, h:mm a '+00:00'",
     "flake8.args": [
-        "--ignore=E501,F541"
+        "--ignore=E501,F541,F403,E302,F405,E262"
     ],
     "files.insertFinalNewline": true,
-    "pylint.args": ["--disable=W1309"]
+    "pylint.args": [
+        "--disable=W1309,W0401"
+    ],
+    "mypy-type-checker.args": [
+        "assignment"
+    ]
 }
